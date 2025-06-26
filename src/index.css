@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* main menu item */
+.menu li > a:focus,
+.menu li > a:active {
+  background-color: #f9a8d4 !important; /* pink-200 */
+  color: black !important;
+}
+
+/* submenu item (nested menu) */
+.menu li ul li > a:focus,
+.menu li ul li > a:active {
+  background-color: #f9a8d4 !important;
+  color: black !important;
+}
+/* 🟣 summary tag এর focus/active background override */
+.menu li > details > summary:focus,
+.menu li > details > summary:active {
+  background-color: #f9a8d4 !important; /* pink-200 */
+  color: black !important;
+}
+
+চাইলে hover ও override করো
+.menu li > details > summary:hover {
+  background-color: transparent !important;
+}
