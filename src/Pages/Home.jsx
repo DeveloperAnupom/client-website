@@ -1,17 +1,22 @@
+import { Helmet } from "react-helmet";
 import HomeAbout from "../Components/HomeAbout";
-import { HomeCard } from "../Components/HomeCard";
 import HomeServices from "../Components/HomeServices";
 import JoinUs from "../Components/JoinUs";
-import Navbar from "../Components/Navbar";
 import { Thumnail } from "../Components/Thumnail";
+import Thumnail2 from "../Components/Thumnail2";
 
 const Home = () => {
   return (
     <div>
+      <div>
+        <Helmet>
+          <title>BRAC</title>
+        </Helmet>
+      </div>
       <Thumnail></Thumnail>
-      <HomeCard></HomeCard>
       <HomeServices></HomeServices>
       <HomeAbout></HomeAbout>
+      <Thumnail2></Thumnail2>
       <JoinUs></JoinUs>
     </div>
   );

@@ -3,9 +3,9 @@ import navlogo from "../assets/nav-logo.png";
 
 const Navbar = () => {
   return (
-    <div className="fixed z-30 w-full">
+    <div className="fixed z-50 w-full border-t-8 border-[#ec008c]">
       {/* <----1st Nav ----> */}
-      <div className="h-8 bg-[#EC008C] text-neutral-content lg:flex"></div>
+      {/* <div className="h-1 bg-[#EC008C] text-neutral-content lg:flex"></div> */}
       {/* 2nd nav */}
       <div className="navbar bg-base-100 shadow-sm py-3.5 ">
         <div className="navbar-start w-2/6 pl-7">
@@ -36,6 +36,9 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 text-[#747474] rounded-box z-1 mt-3 w-52 p-2 shadow translate-x-36 "
             >
               <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
                 <details>
                   <summary>
                     <Link to="/what-we-do">WHAT WE DO</Link>
@@ -45,7 +48,7 @@ const Navbar = () => {
                       <Link to="/social-development">SOCIAL DEVELOPMENT</Link>
                     </li>
                     <li>
-                      <Link to="/investment">INVESTMENT</Link>
+                      <Link to="https://www.bracu.ac.bd/" target="blank">UNIVERCITY</Link>
                     </li>
                   </ul>
                 </details>
@@ -61,21 +64,6 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link to="/global-board">GLOBAL BOARD</Link>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-              <li>
-                <details>
-                  <summary>
-                    <Link to="/where-we-work">WHERE WE WORK</Link>
-                  </summary>
-                  <ul className="p-2">
-                    <li className="lg:w-52">
-                      <Link to="/afghanistan">Afghanistan</Link>
-                    </li>
-                    <li>
-                      <Link to="/bangladesh">Bangladesh</Link>
                     </li>
                   </ul>
                 </details>
@@ -107,7 +95,7 @@ const Navbar = () => {
                     <Link to="/social-development">SOCIAL DEVELOPMENT</Link>
                   </li>
                   <li>
-                    <Link to="/investment">INVESTMENT</Link>
+                    <Link to="https://www.bracu.ac.bd/" target="blank">UNIVERCITY</Link>
                   </li>
                 </ul>
               </details>
@@ -127,21 +115,6 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
-            {/* <li>
-              <details>
-                <summary>
-                  <Link to="/where-we-work">WHERE WE WORK</Link>
-                </summary>
-                <ul className="p-2">
-                  <li className="w-52">
-                    <Link to="/afghanistan">Afghanistan</Link>
-                  </li>
-                  <li>
-                    <Link to="/bangladesh">Bangladesh</Link>
-                  </li>
-                </ul>
-              </details>
-            </li> */}
             <li>
               <Link to="/job-we-offer">JOB WE OFFER</Link>
             </li>

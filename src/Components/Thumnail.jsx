@@ -5,7 +5,7 @@ export const Thumnail = () => {
   return (
     <div>
       <div
-        className="hero min-h-screen "
+        className="hero min-h-screen"
         style={{
           backgroundImage: `url(${thumnail})`,
         }}
