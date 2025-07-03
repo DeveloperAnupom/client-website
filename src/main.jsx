@@ -11,6 +11,10 @@ import AnnualReports from "./Components/AnnualReports.jsx";
 import GlobalBoard from "./Components/GlobalBoard.jsx";
 import WhatWeDo from "./Pages/WhatWeDo.jsx";
 import JobWeOffer from "./Pages/JobWeOffer.jsx";
+import TermsUse from "./Components/TermsUse.jsx";
+import PrivacyPolicy from "./Components/PrivacyPolicy.jsx";
+import AboutUs from "./Pages/AboutUs.jsx";
+import Cooky from "./Pages/Cooky.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +52,22 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/term-use",
+        element: <TermsUse></TermsUse>,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy></PrivacyPolicy>,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs></AboutUs>
+      },
+      {
+        path: "/cooky",
+        element: <Cooky></Cooky>
       },
     ],
   },
